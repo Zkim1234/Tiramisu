@@ -22,68 +22,158 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="page page__home">
-  <header class="header">
-    <!-- this is the navbar. page header  -->
+<!-- this is the navbar. page header  -->
+<header class="header">
+  <div class="row">
+   <div class="col">
      <div class="header__logo">
-      <img src="/" alt="Metrolics Logo">
+     <img src="/" alt="Metrolics Logo">
      </div>
-    <nav class="header__nav">
-      <a href="/">Home</a>
-      <a href="/">Portfolio</a>
-      <a href="/">Blog</a>
-      <a href="/">Quo Vadis?</a>
-      <a href="/">Let's Chat</a>
-    </nav>
-  </header>
-  <div class="banner">
-    <img src="/" class="banner__image" alt="Banner Image">
+     <nav class="header__nav">
+       <a href="/">Home</a>
+       <a href="/">Portfolio</a>
+       <a href="/">Blog</a>
+       <a href="/">Quo Vadis?</a>
+       <a href="/">Let's Chat</a>
+     </nav>
+   </div>
   </div>
-  <main>
-    <section class="page__intro">
-      <h1>Hey Folks! We are the Metrolics Team. 
-        It sports a responsive layout with a mobile layout
-      </h1>
-    </section>
-    <!-- This is the "Things we Do" area. Section Services -->
-    <section class="page section__head">
-      <div class="section__head__container">
-        <h2 class="section__title">Things That We Do</h2>
-        <p class="title__tagline">Ask us what we can do for you.</p>
-        <div class="service services__web">
-          <img src="/" alt="service icon" class="icon-services">
-          <h3 class="services__title">Web Solutions</h3>
-          <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
-            We work flexibly with clients to fulfil their design needs. We are confident you 
-            will be pleased with the results.
-          </p>
-        </div>
-        <div class="service service__web">
-          <img src="/" alt="service icon" class="icon-services">
-          <h3 class="services__title">Web Solutions</h3>
-          <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
-            We work flexibly with clients to fulfil their design needs. We are confident you 
-            will be pleased with the results.
-          </p>
-        </div>
-        <div class="service services__web">
-          <img src="/" alt="service icon" class="icon-services">
-          <h3 class="services__title">Web Solutions</h3>
-          <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
-            We work flexibly with clients to fulfil their design needs. We are confident you 
-            will be pleased with the results.
-          </p>
-        </div>
-        <div class="service services__web">
-          <img src="/" alt="service icon" class="icon-services">
-          <h3 class="services__title">Web Solutions</h3>
-            <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
-              We work flexibly with clients to fulfil their design needs. We are confident you 
-              will be pleased with the results.
-            </p>
-        </div>
-      </div>
-    </section>  
+</header>
+
+<div class="banner">
+ <img src="/" class="banner__image" alt="Banner Image">
+</div>
+
+<main>
+ <!-- H1 section -->
+ <section class="page__intro s-hide m-hide">
+   <div class="row">
+     <div class="col">
+       <h1>Hey Folks! We are the Metrolics Team. 
+     It sports a responsive layout with a mobile layout
+       </h1>
+     </div>
+   </div>
+ </section>
+
+ <!-- This is the "Things we Do" area. Section Services -->
+ <section class="page__section page__section--services">
+   <div class="row m-col-2 l-col-4">
+     <header class="col m-row-span l-row-span page__section__header">
+       <h2 class="page__section__heading">
+           Things that we do
+       </h2>
+       <p class="page__section__tagline">
+           Ask us what we can do for you
+       </p>
+   </header>
+
+     <div class="col service services__web">
+       <div class="icon icon--lightbulb">
+         <svg viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+             aria-labelledby="iconName iconDesc" role="img">
+             <title id="iconName">
+                 Lightbulb Icon
+             </title>
+             <desc id="iconDesc">
+                 An icon illustration depicting a lightbulb.
+                 The icon style is abstract and uses a simple medium outline.
+                 The colour of this icon is yellow.
+                 The icon is framed and drawn with a yellow medium outline.
+                 The border of the frame is slightly rounded and yellow.
+             </desc>
+             <path
+                 d="M10.5 47.5C10.5 48.875 11.625 50 13 50H23C24.375 50 25.5 48.875 25.5 47.5V45H10.5V47.5ZM18 0C8.35 0 0.5 7.85 0.5 17.5C0.5 23.45 3.475 28.675 8 31.85V37.5C8 38.875 9.125 40 10.5 40H25.5C26.875 40 28 38.875 28 37.5V31.85C32.525 28.675 35.5 23.45 35.5 17.5C35.5 7.85 27.65 0 18 0ZM25.125 27.75L23 29.25V35H13V29.25L10.875 27.75C7.5 25.4 5.5 21.575 5.5 17.5C5.5 10.6 11.1 5 18 5C24.9 5 30.5 10.6 30.5 17.5C30.5 21.575 28.5 25.4 25.125 27.75Z"
+                 fill="#FFB901" />
+         </svg>
+       </div> <!-- icon end -->
+       <h3 class="services__title">Web Solutions</h3>
+         <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
+           We work flexibly with clients to fulfil their design needs. We are confident you 
+           will be pleased with the results.
+         </p>
+     </div> <!-- service end-->
+
+     <div class="col service services__web">
+       <div class="icon icon--lightbulb">
+         <svg viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+             aria-labelledby="iconName iconDesc" role="img">
+             <title id="iconName">
+                 Lightbulb Icon
+             </title>
+             <desc id="iconDesc">
+                 An icon illustration depicting a lightbulb.
+                 The icon style is abstract and uses a simple medium outline.
+                 The colour of this icon is yellow.
+                 The icon is framed and drawn with a yellow medium outline.
+                 The border of the frame is slightly rounded and yellow.
+             </desc>
+             <path
+                 d="M10.5 47.5C10.5 48.875 11.625 50 13 50H23C24.375 50 25.5 48.875 25.5 47.5V45H10.5V47.5ZM18 0C8.35 0 0.5 7.85 0.5 17.5C0.5 23.45 3.475 28.675 8 31.85V37.5C8 38.875 9.125 40 10.5 40H25.5C26.875 40 28 38.875 28 37.5V31.85C32.525 28.675 35.5 23.45 35.5 17.5C35.5 7.85 27.65 0 18 0ZM25.125 27.75L23 29.25V35H13V29.25L10.875 27.75C7.5 25.4 5.5 21.575 5.5 17.5C5.5 10.6 11.1 5 18 5C24.9 5 30.5 10.6 30.5 17.5C30.5 21.575 28.5 25.4 25.125 27.75Z"
+                 fill="#FFB901" />
+         </svg>
+       </div> <!-- icon end -->
+       <h3 class="services__title">Web Solutions</h3>
+         <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
+           We work flexibly with clients to fulfil their design needs. We are confident you 
+           will be pleased with the results.
+         </p>
+     </div> <!-- service end-->
+
+     <div class="col service services__web">
+       <div class="icon icon--lightbulb">
+         <svg viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+             aria-labelledby="iconName iconDesc" role="img">
+             <title id="iconName">
+                 Lightbulb Icon
+             </title>
+             <desc id="iconDesc">
+                 An icon illustration depicting a lightbulb.
+                 The icon style is abstract and uses a simple medium outline.
+                 The colour of this icon is yellow.
+                 The icon is framed and drawn with a yellow medium outline.
+                 The border of the frame is slightly rounded and yellow.
+             </desc>
+             <path
+                 d="M10.5 47.5C10.5 48.875 11.625 50 13 50H23C24.375 50 25.5 48.875 25.5 47.5V45H10.5V47.5ZM18 0C8.35 0 0.5 7.85 0.5 17.5C0.5 23.45 3.475 28.675 8 31.85V37.5C8 38.875 9.125 40 10.5 40H25.5C26.875 40 28 38.875 28 37.5V31.85C32.525 28.675 35.5 23.45 35.5 17.5C35.5 7.85 27.65 0 18 0ZM25.125 27.75L23 29.25V35H13V29.25L10.875 27.75C7.5 25.4 5.5 21.575 5.5 17.5C5.5 10.6 11.1 5 18 5C24.9 5 30.5 10.6 30.5 17.5C30.5 21.575 28.5 25.4 25.125 27.75Z"
+                 fill="#FFB901" />
+         </svg>
+       </div> <!-- icon end -->
+       <h3 class="services__title">Web Solutions</h3>
+         <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
+           We work flexibly with clients to fulfil their design needs. We are confident you 
+           will be pleased with the results.
+         </p>
+     </div> <!-- service end-->
+
+     <div class="col service services__web">
+       <div class="icon icon--lightbulb">
+         <svg viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+             aria-labelledby="iconName iconDesc" role="img">
+             <title id="iconName">
+                 Lightbulb Icon
+             </title>
+             <desc id="iconDesc">
+                 An icon illustration depicting a lightbulb.
+                 The icon style is abstract and uses a simple medium outline.
+                 The colour of this icon is yellow.
+                 The icon is framed and drawn with a yellow medium outline.
+                 The border of the frame is slightly rounded and yellow.
+             </desc>
+             <path
+                 d="M10.5 47.5C10.5 48.875 11.625 50 13 50H23C24.375 50 25.5 48.875 25.5 47.5V45H10.5V47.5ZM18 0C8.35 0 0.5 7.85 0.5 17.5C0.5 23.45 3.475 28.675 8 31.85V37.5C8 38.875 9.125 40 10.5 40H25.5C26.875 40 28 38.875 28 37.5V31.85C32.525 28.675 35.5 23.45 35.5 17.5C35.5 7.85 27.65 0 18 0ZM25.125 27.75L23 29.25V35H13V29.25L10.875 27.75C7.5 25.4 5.5 21.575 5.5 17.5C5.5 10.6 11.1 5 18 5C24.9 5 30.5 10.6 30.5 17.5C30.5 21.575 28.5 25.4 25.125 27.75Z"
+                 fill="#FFB901" />
+         </svg>
+       </div> <!-- icon end -->
+       <h3 class="services__title">Web Solutions</h3>
+         <p class="services__description">We are a fairly small, flexible design studio that designs for print and web. 
+           We work flexibly with clients to fulfil their design needs. We are confident you 
+           will be pleased with the results.
+         </p>
+     </div> <!-- service end-->
+
+   </div> 
+ </section>
     <!-- This is the Section Blog -->
     <section class="page section__blog">
       <div class="section__blog__container">
