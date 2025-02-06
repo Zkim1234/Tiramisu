@@ -389,6 +389,15 @@
 
 
   /* Footer Section - DENISE  */
-  
+  footer{
+    background-color: #0E2E4E;
+    color: white;
+  }
+  .three-section{
+    display: inline-flexbox;
+  }
+  .footer__section{
+    margin: 0 20% 0 20%;
+  }
 
   /* End of Footer Section - DENISE  */
