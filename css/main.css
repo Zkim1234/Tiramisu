@@ -383,7 +383,21 @@
 
 
   /* Body Section - ZINNA  */
+  .section__title, .section__tagline{
+    text-align: center;
 
+  }
+
+  .sample_Image{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  
+    @media screen and (max-width: 39.9375em){
+  
+    }
+    }
 
   /* End of Body Section - ZINNA  */
 
