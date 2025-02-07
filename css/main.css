@@ -383,17 +383,41 @@
 
 
   /*---------------- Body Section - ZINNA -----------  */
-  .section__title, .section__tagline{
-    text-align: center;
-  }
+  
   .section__title{
     font-size: 28px;
+    margin:0px;
+    margin-top:10px;
   }
   .section__tagline{
     font-size: 12px; 
     font-weight:lighter;
+    padding:0px;
+    margin:0px;
+    margin-bottom: 10px;
   }
-  
+  .section__title, .section__tagline{
+    text-align: center;
+  }
+  .blog__entry{
+    display:flex;
+  }
+
+  /* small screen image size adjustment */
+  @media screen and (max-width: 39.9375em){
+    .sample__image, .portfolio__image{
+      width: 23rem; 
+      height: 15rem;
+    }
+  }
+
+  /* medium screen image size adjustment */
+  @media screen and (min-width: 40em) and (max-width: 63.9375em){
+  }
+
+  /* Larger screen image size adjustment */
+  @media screen and (max-width: 64em){
+  }
 
   /*----------------- End of Body Section - ZINNA -------------- */
 
