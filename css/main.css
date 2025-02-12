@@ -401,7 +401,7 @@
   }
 
 /*---------------- blog contents ---------------------------*/
-  .date__day, .date__month {
+  .date__day, .date__month, .desc__heading, .desc__tags {
     color: white;
   }
 
@@ -481,6 +481,22 @@
   }
 
 /*---------- Partnership content -------- */
+.client{
+  padding: 1rem;
+  background-color: #F3F3F3;
+}
+.client__logo__section{
+  column-gap: 1rem;
+  justify-content: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+.client__logo{
+  margin: auto;
+  
+}
 
 
 
@@ -575,6 +591,7 @@
     .project__main :nth-child(3){
       grid-column:3/4;
     }
+    
   }
 
   /*----------------- End of Body Section - ZINNA -------------- */
