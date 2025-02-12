@@ -437,18 +437,26 @@
     height: auto;
 
   }
+
+  
   /* Article description */
   .desc__content{
     height: 2.5rem;
     background-color:#19B2DE;
-    bottom: 0;
+    position: absolute;
+    right:0;
+    left:0;
+    bottom:0;
+    width: auto;
   }
+
   .desc__main{
     position:relative;
     row-gap:0;
     padding:0;
     align-content: center;
   }
+
   .content__icon{
     position: absolute;
     width: 1rem;
@@ -458,32 +466,95 @@
     
   }
 
-
   .desc__heading, .desc__tags{
     margin: 0; 
     padding:0;
     align-content: start;
   
   }
+
   .desc__heading{
     grid-row-start:1;
     font-size: 1em;
   }
+
   .desc__tags{
     grid-row-start: 2;
     font-size: 0.8em;
     
   }
 
+  /*------------- Hovered Thumbnail of the work ------------*/
+  .blog__entry:hover .desc__content{
+    background-color:#19B2DE90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    height:auto;
+    width:auto;
+  }
+
+  .blog__entry:hover .desc__main{
+    position: absolute;
+    bottom:0;
+    margin-bottom:1rem;
+  }
+
+  .blog__entry:hover .content__icon{
+    opacity:0;
+  }
+
+  .blog__entry:hover .date__background{
+    opacity:0;
+  }
+
+  .projects__sample:hover .desc__content{
+    background-color:#19B2DE90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    height:auto;
+    width:auto;
+  }
+
+  .projects__sample:hover .desc__main{
+    position: absolute;
+    bottom:0;
+    margin-bottom:1rem;
+  }
+
+  .projects__sample:hover .content__icon{
+    opacity:0;
+  }
+
+  .projects__sample:hover .date__background{
+    opacity:0;
+  }
+  
+ 
+
   /*---------- portfolio content -------- */
   .portfolio__image{
-    width:100%
+    width:100%;
+  }
+
+  .projects__sample{
+    position: relative;
+    margin:1rem;
+    padding:0;
+  }
+  .project__main{
+    margin:0;
+    padding:0;
   }
 
 /*---------- Partnership content -------- */
 .client{
+  align-items: center;
   padding: 1rem;
-  background-color: #F3F3F3;
+  /* background-color: #F3F3F3; */
 }
 .client__logo__section{
   column-gap: 1rem;
@@ -503,9 +574,7 @@
   /*--------- small screen image size adjustment ----------*/
   @media screen and (max-width: 39.9375em){
    
-    .blog__image{
-      width:100%;
-    }
+
         
   } 
 
@@ -513,9 +582,6 @@
   @media screen and (min-width: 40em) and (max-width: 63.9375em){
     
    
-    .blog__image{
-      width:100%;
-    }
     /*----------------- Grid --------------------------- */
     .M-col-2{
       display: grid; 
