@@ -442,12 +442,7 @@
   .header__nav__letschat {
     background: #265787;
   }
-  
-  .header__logo {
-    display: flex;
-    justify-content: flex-start;
-  }
-
+/* media query for tablet size  */
   @media (max-width: 768px) {
     .header {
       display: flex;
@@ -459,7 +454,15 @@
       align-items: center;
     }
   }
+/*  */
 
+/* media query for mobile phones  */
+@media (max-width: 480px) {
+  .header {
+    display: none;
+  }
+}
+/*  */
 
 
 /* header nav style end */
