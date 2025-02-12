@@ -492,15 +492,36 @@
     }
   }
   /* banner style end  */
-  
-  
-  
+
 /* intro message style start */
   .page__intro__message {
     color: black; 
     display: flex;
     justify-content: center;
+    text-align: center;
   }
+/* Hide section in desktop */
+.s-hide, .m-hide {
+  display: none;
+}
+
+/* appear on tablets*/
+@media (max-width: 1024px) {
+  .m-hide {
+    display: block; 
+  }
+}
+
+/* appear on mobile */
+@media (max-width: 768px) {
+  .s-hide {
+    display: block;
+  }
+}
+
+
+
+
   /* intro message style end  */
   
   /* "things we do area" message style start  */
