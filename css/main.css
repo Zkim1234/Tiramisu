@@ -432,20 +432,19 @@
     
   }
 
-
-  /* Blog description */
 .blog__image {
   width: 100%;
   height: auto;
 
 }
-
-.project__desc__content{
+/* Article description */
+.desc__content{
   height: 2.5rem;
   background-color:#19B2DE;
   bottom: 0;
 }
-.project__desc__main{
+.desc__main{
+  position:relative;
   row-gap:0;
   padding:0;
   align-content: center;
@@ -455,14 +454,14 @@
   width: 1rem;
   height:  auto;
   background-color: #1596BD;  
-  right: 1rem; 
-  bottom: 1rem;
+  right: 0;
   
 }
+
+
 .desc__heading, .desc__tags{
   margin: 0; 
   padding:0;
-  
   align-content: start;
  
 }
@@ -476,28 +475,26 @@
   
 }
 
-  /* small screen image size adjustment */
+/*---------- portfolio content -------- */
+.portfolio__image{
+  width:100%
+}
+
+
+
+  /*--------- small screen image size adjustment ----------*/
   @media screen and (max-width: 39.9375em){
-    .portfolio__image{
-      width: 100%;
-    }
+   
     .blog__image{
       width:100%;
     }
-    
-   
-
-    /*---------- Blog description size -------------------- */
-    
+        
   } 
 
   /* medium screen image size adjustment */
   @media screen and (min-width: 40em) and (max-width: 63.9375em){
     
-    .portfolio__image{
-     width: 100%;
-     position: relative;
-    }
+   
     .blog__image{
       width:100%;
     }
@@ -545,9 +542,8 @@
 
   /* Larger screen image size adjustment */
   @media screen and (min-width: 64em){
-    .project__main{
-      width:100%;
-    }
+
+    
     /*----------------- Grid --------------------------- */
     .L-col-2{
       display: grid; 
