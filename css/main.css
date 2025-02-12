@@ -385,36 +385,26 @@
   /* Header Section - MICAELA */
 
 /* header nav style start */
-  header {
+  .header {
     display: flex;
     align-items: end;
     justify-content: space-between;
-    padding: 0;
     gap: 176px;
+    margin: 0;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
+    height: 100%;
   }
-  
-  .header__logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .header__logo__vector {
-    display: flex;
-    width: 30px;
-    height: 30px;
-  }
-  
-  .logo__name {
-    font-size: 32px;
-    color: #4D4D4D;
-  }
-  
+
+.logo__metrolics {
+  display: flex;
+  justify-content: center;
+}
+
   .header__nav {
     display: flex;
     gap: none;
+    margin: 0;
   }
   
   .header__nav__home,
@@ -426,7 +416,7 @@
     justify-content: flex-start;
     align-items: end;
     height: 96px;
-    width: 134px;
+    width: 123px;
     padding-left: 10px;
     padding-bottom: 10px;
     color: #FFFFFF;
@@ -457,6 +447,21 @@
     display: flex;
     justify-content: flex-start;
   }
+
+  @media (max-width: 768px) {
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .header__nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+
 /* header nav style end */
 
 /* banner style start  */
@@ -487,7 +492,7 @@
   
   
   
-
+/* intro message style start */
   .page__intro__message {
     color: black; 
   }
@@ -504,8 +509,9 @@
     color: #1EAFDE;
     font-weight: normal;
   }
+  /* intro message style end  */
   
-  
+  /* "things we do area" message style start  */
   .page__section__heading,
   .page__section__tagline {
     display: flex;
@@ -519,6 +525,31 @@
   .page__section__tagline {
     color: #A3A3A3;
   }
+  /* "things we do area" message style end  */
+
+  /* styles for web solutions start  */
+.services__title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #545454;
+}
+
+.services__description {
+  font-size: 12px;
+  color: #939393;
+}
+/* styles for web solutions end  */
+
+
+
+
+
+
+
+
+
 
   /* End of Header Section - MICAELA  */
 
