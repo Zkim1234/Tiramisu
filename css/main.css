@@ -384,7 +384,82 @@
   
   /* Header Section - MICAELA */
 
+/* header nav style start */
+  header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0;
+    gap: 176px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+  }
+  
+  .header__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .header__logo__vector {
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .logo__name {
+    font-size: 32px;
+    color: #4D4D4D;
+  }
+  
+  .header__nav {
+    display: flex;
+    gap: none;
+  }
+  
+  .header__nav__home,
+  .header__nav__portfolio,
+  .header__nav__blog, 
+  .header__nav__qouvadis,
+  .header__nav__letschat {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    height: 96px;
+    width: 134px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
 
+  .header__nav__home {
+    background: #25C389;
+  }
+  
+  .header__nav__portfolio {
+    background: #FFB901;
+  }
+  
+  .header__nav__blog {
+    background: #DE6262;
+  }
+  
+  .header__nav__qouvadis {
+    background: #19B2DE;
+  }
+  
+  .header__nav__letschat {
+    background: #265787;
+  }
+  
+  .header__logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+/* header nav style end */
+
+/* banner style start  */
   .banner {
     width: 100%; 
     max-width: 1441px; 
@@ -408,6 +483,7 @@
       display: none;
     }
   }
+  /* banner style end  */
   
   
   
