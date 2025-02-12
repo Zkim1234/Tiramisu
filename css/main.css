@@ -498,19 +498,8 @@
 /* intro message style start */
   .page__intro__message {
     color: black; 
-  }
-  
-  .page__intro__message::before {
-    content: "Hey Folks! We are the ";
-  }
-  
-  .page__intro__message::after {
-    content: " Team. It sports a responsive layout with a mobile layout";
-  }
-  
-  .page__intro__message b {
-    color: #1EAFDE;
-    font-weight: normal;
+    display: flex;
+    justify-content: center;
   }
   /* intro message style end  */
   
