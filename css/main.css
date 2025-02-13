@@ -387,24 +387,23 @@
 /* header nav style start */
   .header {
     display: flex;
-    align-items: end;
-    justify-content: space-between;
-    gap: 176px;
-    margin: 0;
+    justify-content: center;
+    gap: -9px;
+    margin: auto;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     height: 100%;
   }
 
-.logo__metrolics {
-  display: flex;
-  justify-content: center;
-}
+  .row.logo__metrolics {
+    margin-bottom: -15px;
+    margin-left: auto;
+  }
 
   .header__nav {
     display: flex;
     gap: none;
-    margin: 0;
+    margin: -17px auto -15px;
   }
   
   .header__nav__home,
@@ -415,8 +414,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: end;
-    height: 96px;
-    width: 123px;
+    height: 100px;
+    width: 110px;
     padding-left: 10px;
     padding-bottom: 10px;
     color: #FFFFFF;
@@ -452,6 +451,7 @@
     .header__nav {
       display: flex;
       align-items: center;
+      width: auto;
     }
   }
 /*  */
@@ -469,17 +469,11 @@
 
 /* banner style start  */
   .banner {
-    width: auto; 
-    overflow: hidden;
-    display: block;
+    background-color: #EBEBEB;
+    display: flex;
     justify-content: center;
+    width: auto;
     padding: 0;
-  }
-  
-  .banner__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
   }
   
   @media  screen and (max-width: 39.9375em) {
