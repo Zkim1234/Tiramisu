@@ -388,8 +388,7 @@
   .header {
     display: flex;
     justify-content: center;
-    gap: -100px;
-    margin: auto;
+    margin: auto 138px;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     height: 100%;
@@ -461,6 +460,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin: auto;
     }
     .header__nav {
       display: flex;
@@ -485,6 +485,9 @@
     .header__nav {
       display: none;
     }
+    .header {
+      margin: auto;
+    }
   }
 /*  */
 /* header nav style end */
@@ -498,10 +501,11 @@
     justify-content: center;
     width: auto;
     padding: 0;
+    margin: auto;
   }
 
   .banner__image {
-    width: 980px;
+    width: 1050px;
     height: 512px;
   }
   
@@ -517,14 +521,19 @@
       display: none;
     }
   }
+
   /* banner style end  */
 
 /* intro message style start */
+  .page__intro {
+  padding: 0;
+}
 
   .page__intro .col {
     margin: auto 190px;
+    padding: 0;
     @media screen and (min-width: 40em) and (max-width: 63.9375em)  {
-      margin: auto 90px;
+      margin: auto;
     };
     @media  screen and (max-width: 39.9375em) {
       margin: auto;
@@ -581,21 +590,29 @@
 
   /* styles for web solutions start  */
 
-  .page__section.page__section--services .row.m-col-2.l-col-4 {
-    margin: auto 185px;
+  
+  .col.m-row-span.l-row-span.page__section__header {
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-      margin: auto 90px;
-    };
-    @media  screen and (max-width: 39.9375em) {
-      margin: auto -15px;
+      margin: auto;
+
     }
   }
-
+  
+  .page__section.page__section--services .row.m-col-2.l-col-4 {
+    margin: auto 200px;
+    padding: 0;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      margin: auto;
+    };
+    @media  screen and (max-width: 39.9375em) {
+      margin: -15px;
+    }
+  }
+  
   .page__section.page__section--services .col.service.services__web {
     @media  screen and (max-width: 39.9375em) {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
     }
     }
 
