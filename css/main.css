@@ -388,7 +388,7 @@
   .header {
     display: flex;
     justify-content: center;
-    gap: -9px;
+    gap: -100px;
     margin: auto;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
@@ -398,6 +398,9 @@
   .row.logo__metrolics {
     margin-bottom: -15px;
     margin-left: auto;
+    @media  screen and (max-width: 39.9375em) {
+      margin-left: -15px;
+    }
   }
 
   .header__nav {
@@ -422,6 +425,7 @@
     text-decoration: none;
   }
 
+
   .header__nav__home {
     background: #25C389;
   }
@@ -441,6 +445,16 @@
   .header__nav__letschat {
     background: #265787;
   }
+
+  .header__nav__home:hover,
+  .header__nav__portfolio:hover,
+  .header__nav__blog:hover, 
+  .header__nav__qouvadis:hover,
+  .header__nav__letschat:hover {
+    background-color: #F0F08C;
+    color: #0057C2;
+  }
+
 /* media query for tablet size  */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .header {
@@ -453,6 +467,16 @@
       align-items: center;
       width: auto;
     }
+    .header__nav__home,
+    .header__nav__portfolio,
+    .header__nav__blog, 
+    .header__nav__qouvadis,
+    .header__nav__letschat {
+      height: 70px;
+    }
+    .row.logo__metrolics {
+      margin-bottom: -5px;
+    }
   }
 /*  */
 
@@ -463,9 +487,9 @@
     }
   }
 /*  */
-
-
 /* header nav style end */
+
+
 
 /* banner style start  */
   .banner {
@@ -475,7 +499,19 @@
     width: auto;
     padding: 0;
   }
+
+  .banner__image {
+    width: 980px;
+    height: 512px;
+  }
   
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .banner__image {
+      width: 600px;
+      height: 300px;
+    }
+  }
+
   @media  screen and (max-width: 39.9375em) {
     .banner {
       display: none;
@@ -484,6 +520,17 @@
   /* banner style end  */
 
 /* intro message style start */
+
+  .page__intro .col {
+    margin: auto 190px;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em)  {
+      margin: auto 90px;
+    };
+    @media  screen and (max-width: 39.9375em) {
+      margin: auto;
+    }
+  }
+
   .page__intro__message {
     color: black; 
     display: flex;
@@ -493,11 +540,24 @@
   /* intro message style end  */
   
   /* "things we do area" message style start  */
+
+  .col.m-row-span.l-row-span.page__section__header {
+    margin: auto 200px;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em)  {
+      margin: auto 105px;
+    };
+    @media  screen and (max-width: 39.9375em) {
+      margin: auto;
+    }
+  }
+
   .page__section__heading,
   .page__section__tagline {
     display: flex;
     justify-content: center;
   }
+
+  
   
   .page__section__heading {
     font-size: 28px;
@@ -520,12 +580,43 @@
 
 
   /* styles for web solutions start  */
+
+  .page__section.page__section--services .row.m-col-2.l-col-4 {
+    margin: auto 185px;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      margin: auto 90px;
+    };
+    @media  screen and (max-width: 39.9375em) {
+      margin: auto -15px;
+    }
+  }
+
+  .page__section.page__section--services .col.service.services__web {
+    @media  screen and (max-width: 39.9375em) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    }
+
+  .services__web.frame{
+    @media  screen and (max-width: 39.9375em) {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: auto;
+      align-items: start;
+    }
+  }
+
 .services__title {
   display: flex;
   justify-content: center;
   font-weight: bold;
   font-size: 16px;
   color: #545454;
+  margin-top: 0;
+  margin-bottom: -5px;
 }
 
 .services__description {
@@ -538,6 +629,11 @@
   display: flex;
   justify-content: center;
   width: auto;
+  @media  screen and (max-width: 39.9375em) {
+    width: 100%;
+    margin-left: -30px;;
+    margin-top: 0;
+  }
 }
 /* styles for web solutions end  */
 
