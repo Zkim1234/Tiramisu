@@ -38,6 +38,10 @@
     font-size: 1em;
     line-height: 1.4;
   }
+
+  body{
+    margin:0;
+  }
   
   ::-moz-selection {
     background: #b3d4fc;
@@ -117,7 +121,6 @@
   section,
   footer,
   header {
-      outline: 1px solid #ccc;
       min-height: 1rem;
       padding: 1rem;
   }
@@ -130,7 +133,6 @@
   }
   .col {
       position: relative;
-      background-color: rgb(242,238,172);
   }
   
   /* 2.2 Small only */
@@ -618,13 +620,13 @@
   }
   
   .page__section.page__section--services .row.m-col-2.l-col-4 {
-    margin: auto 200px;
+    margin: auto;
     padding: 0;
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       margin: auto;
     };
     @media  screen and (max-width: 39.9375em) {
-      margin: -15px;
+      /* margin: -15px; */
     }
   }
   
@@ -674,16 +676,6 @@
     margin-top: -5px;
   }
 }
-/* styles for web solutions end  */
-
-
-
-
-
-
-
-
-
 
   /* End of Header Section - MICAELA  */
 
@@ -971,6 +963,7 @@
 
   /* Footer Section - DENISE  */
   footer{
+    margin:0;
     background-color: #0E2E4E;
     color: white;
   }
@@ -994,6 +987,10 @@
     color: #FFB901;
   }
   
+  .footer__section{
+    margin:0;
+  }
+
   /* 2.2 Small only */
   
   @media  screen and (max-width: 39.9375em) {
