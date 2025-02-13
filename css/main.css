@@ -555,7 +555,7 @@
       margin: 30px 100px;
     };
     @media  screen and (max-width: 39.9375em) {
-      margin: auto 70px;
+      margin: auto 30px;
     }
   }
   /* intro message style end  */
@@ -576,18 +576,25 @@
   .page__section__tagline {
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   
   
   .page__section__heading {
     font-size: 28px;
+    @media  screen and (max-width: 39.9375em) {
+      margin: 10px -30px;
+    }
   }
 
   .page__section__tagline {
     color: #A3A3A3;
     margin-top: -20px;
     font-size: 11px;
+    @media  screen and (max-width: 39.9375em) {
+      margin-top: -10px;
+    }
   }
 
   @media screen and (min-width: 40em) and (max-width: 63.9375em)  {
@@ -633,7 +640,7 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-      margin: auto;
+      margin: 10px;
       align-items: start;
     }
   }
@@ -658,10 +665,13 @@
   display: flex;
   justify-content: center;
   width: auto;
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    margin-top: -10px;
+  };
   @media  screen and (max-width: 39.9375em) {
-    width: 100%;
-    margin-left: -30px;;
-    margin-top: 0;
+    width: 150%;
+    margin-left: -15px;
+    margin-top: -5px;
   }
 }
 /* styles for web solutions end  */
