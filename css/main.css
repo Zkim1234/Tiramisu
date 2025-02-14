@@ -982,6 +982,7 @@
 
 
   /* Footer Section - DENISE  */
+
   footer{
     margin:0;
     padding: 1em;
@@ -992,7 +993,7 @@
   span{
     color: #19B2DE;
   }
-  
+
   .ceo__img{
     border-radius: 50%;
     overflow: hidden;
@@ -1011,6 +1012,27 @@
   .footer__section{
     margin:0;
     width:100%;
+    padding: 0;
+  }
+
+  .instagram__photo{
+    width:auto;
+    margin:0.5rem;
+  }
+  .image__display{
+    margin: 10px;
+  }
+
+  .instagram__photo__container{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 10px;
+  }
+
+  .instagram{
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
 
   /* 2.2 Small only */
@@ -1066,6 +1088,8 @@
     }
      .four__section__footer{
       display: flex;
+      justify-items: center;
+      justify-content: space-betwen;
       flex-wrap: wrap;
       padding: 0;
     }
@@ -1127,17 +1151,24 @@
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .footer__ceo__container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      flex-direction: row;
+      justify-content: space-between;
+      width: auto;
+    }
+    .paragraph__container{
+      width:auto;
+
     }
     .ceo-story {
       display: flex;
-      width: 70%;
+      width: auto;
       text-align: left;
     }
     .ceo__img{
+      margin: 10px;
       border-radius: 50%;
       overflow: hidden;
+      width: 60%;
     }
     hr{
       width: 30%;
@@ -1159,11 +1190,7 @@
     .instagram{
       width: 50%;
     }
-    .instagram__photo__container{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      width: auto;
-    }
+    
     .social-media__icons{
       display: flex;
       flex-direction: row;
@@ -1177,6 +1204,11 @@
       border-radius: 2px;
     }
     
+    .instagram{
+      margin: 0.5rem;
+      width: 45%;
+      flex-wrap:wrap;
+    }
 
     .email__form {
       display: flex;
@@ -1215,18 +1247,14 @@
       flex-wrap: wrap;
       padding: 0;
       overflow: auto;
-      gap: 10px;
-      margin-left: 10%;
-      margin-right: 10%;
+      justify-items: center;
+      justify-content: space-between;
+      
     }
-    .instagram__photo__container{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-
-    }
+    
+   
     .footer__ceo__container {
       display: flex;
-      margin-left: 10%;
       flex-direction: row;
       justify-content: center;
     }
@@ -1253,15 +1281,18 @@
       border: none;
       background-color: #FFB901;
     }
+    
+    .instagram{
+      flex-wrap:wrap;
+      width: 25%;
+    }
 
-    /* .instagram{
-      
-    } */
 
     .about__us,
     .whats__new,
     .social__media{
-      width: 25%;
+      width: 22%;
+      gap: 10px;
     }
 
     .social-media__icons{
