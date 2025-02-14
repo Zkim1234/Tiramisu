@@ -116,14 +116,14 @@
   /* ==========================================================================
      2. LAYOUT
      ========================================================================== */
-  div,
-  main,
+  /* div,
   section,
   footer,
   header {
+    margin:0;
       min-height: 1rem;
       padding: 1rem;
-  }
+  } */
   /* 2.1 Core layout */
   
   .row {
@@ -132,6 +132,7 @@
       margin: auto;
   }
   .col {
+    padding: 1rem;
       position: relative;
   }
   
@@ -461,20 +462,22 @@
     .header {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 1em;
       margin: auto;
+      height: auto;
     }
     .header__nav {
       display: flex;
       align-items: center;
       width: auto;
+      height: auto;
     }
     .header__nav__home,
     .header__nav__portfolio,
     .header__nav__blog, 
     .header__nav__qouvadis,
     .header__nav__letschat {
-      height: 70px;
+      height: 4.5rem;
     }
     .row.logo__metrolics {
       margin-bottom: -5px;
@@ -586,7 +589,7 @@
   .page__section__heading {
     font-size: 28px;
     @media  screen and (max-width: 39.9375em) {
-      margin: 10px -30px;
+     
     }
   }
 
@@ -594,7 +597,8 @@
     color: #A3A3A3;
     margin-top: -20px;
     font-size: 11px;
-    @media  screen and (max-width: 39.9375em) {
+
+    @media screen and (max-width: 39.9375em) {
       margin-top: -10px;
     }
   }
@@ -630,12 +634,20 @@
     }
   }
   
-  .page__section.page__section--services .col.service.services__web {
+  .services__web{
+    padding: 1rem;
+    display: flex;
     @media  screen and (max-width: 39.9375em) {
-      display: flex;
       flex-direction: row;
+      gap: 1rem;
+      align-items: center;
     }
-    }
+    @media screen and (min-width: 40em) {
+      flex-direction: column;
+      align-items: center;
+    };
+
+  }
 
   .services__web.frame{
     @media  screen and (max-width: 39.9375em) {
@@ -663,18 +675,10 @@
   font-family: "ubuntu", sans-serif;
 }
 
-.icon {
+.services__icon {
   display: flex;
   justify-content: center;
-  width: auto;
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    margin-top: -10px;
-  };
-  @media  screen and (max-width: 39.9375em) {
-    width: 150%;
-    margin-left: -15px;
-    margin-top: -5px;
-  }
+  width: 100%;
 }
 
   /* End of Header Section - MICAELA  */
@@ -699,6 +703,11 @@
   }
 
 /*---------------- blog contents ---------------------------*/
+.section__blog,
+.section__portfolio,
+.section__clients{
+  max-width: 60rem;
+}
   .date__day, .date__month, .desc__heading, .desc__tags {
     color: white;
   }
@@ -708,14 +717,14 @@
   }
 
   .blog__entry {
-    width: 100%;
     position: relative;
   }
 
   .date__background {
     width: 3.6rem;
-    height: 2rem;
+    height: 3rem;
     text-align: center;
+    align-content: center;
     position: absolute;
     background-color: #D8605F;
   }
@@ -746,19 +755,22 @@
     left:0;
     bottom:0;
     width: auto;
+    min-height: 1rem;
+      padding: 1rem;
   }
 
   .desc__main{
     position:relative;
     row-gap:0;
-    padding:0;
+    
     align-content: center;
   }
 
   .content__icon{
     position: absolute;
+    padding: 1rem;
     width: 1rem;
-    height:  auto;
+    height:  1rem;
     background-color: #1596BD;  
     right: 0;
     
@@ -852,9 +864,11 @@
 .client{
   align-items: center;
   padding: 1rem;
+  width: auto;
   /* background-color: #F3F3F3; */
 }
 .client__logo__section{
+  width:auto;
   column-gap: 1rem;
   justify-content: center;
   justify-content: space-evenly;
@@ -863,8 +877,7 @@
   align-items: center;
 }
 .client__logo{
-  margin: auto;
-  
+  width: 100%;
 }
 
 
@@ -964,6 +977,7 @@
   /* Footer Section - DENISE  */
   footer{
     margin:0;
+    padding: 1em;
     background-color: #0E2E4E;
     color: white;
   }
@@ -1231,9 +1245,9 @@
       background-color: #FFB901;
     }
 
-    .instagram{
+    /* .instagram{
       
-    }
+    } */
 
     .about__us,
     .whats__new,
