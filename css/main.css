@@ -386,7 +386,7 @@
   }
   .header,
   .page__intro,
-  .banner,
+  .banner__image__flags,
   .services,
   .page__section,
   .section__blog,
@@ -530,14 +530,39 @@
     background-color: #EBEBEB;
     display: flex;
     justify-content: center;
-    width: auto;
     padding: 0;
-    margin: auto;
+    width:100vw;
+  }
+  .banner__image__flags{
+    position:relative;
+    
+  }
+  .banner__flag__images{
+    position: absolute;
+    display: flex; 
+    gap: 10px;
+    flex-direction:column;
+    bottom: 3rem;
+    left: 2rem;
+    margin:0;
+    padding:0;
+  }
+
+  .banner__flag{
+    margin:0;
+    padding:0;
+    height: 2rem;
+    &:first-child{
+      width: 5.5rem;
+    }
+    &:nth-child(2){
+      width: 8rem;
+    }
   }
 
   .banner__image {
-    width: 1050px;
-    height: 512px;
+    width: auto;
+    height: auto;
   }
   
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -1013,6 +1038,7 @@
   .ceo__img{
     border-radius: 50%;
     overflow: hidden;
+    margin: 10px;
   }
   
   .red{
@@ -1181,7 +1207,6 @@
       text-align: left;
     }
     .ceo__img{
-      margin: 10px;
       border-radius: 50%;
       overflow: hidden;
       width: 60%;
@@ -1275,7 +1300,7 @@
       justify-content: center;
     }
     .ceo__img{
-      width: 30%;
+      width: 50%;
       margin-top: 30px;
     }
 
