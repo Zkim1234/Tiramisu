@@ -535,14 +535,15 @@
   }
   .banner__image__flags{
     position:relative;
-    
+    max-width: 60rem;
+    height: auto;
   }
   .banner__flag__images{
     position: absolute;
     display: flex; 
     gap: 10px;
     flex-direction:column;
-    bottom: 3rem;
+    bottom: 5rem;
     left: 2rem;
     margin:0;
     padding:0;
@@ -561,14 +562,18 @@
   }
 
   .banner__image {
-    width: auto;
+    max-width: 64em;
     height: auto;
+
+    @media screen and (min-width: 64em){
+      width: 50em;
+    }
   }
   
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .banner__image {
-      width: 600px;
-      height: 300px;
+      width: auto;
+      height: auto;
     }
   }
 
